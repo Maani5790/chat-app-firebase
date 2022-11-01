@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Olx</title>
+
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <link href="main.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-red p-t-180 p-b-100 font-robo">
+        <div class="wrapper wrapper--w960">
+            <div class="card card-2">
+                <div class="card-body">
+                    <h2 class="title">Create Ad</h2>
+                    <form>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Ad Title" id="title">
+                        </div>
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Price" id="price">
+                            </div>
+                            <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Ad Description" id="ad-desc">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="file" id="img">
+                    </div>
+                    </form>
+                    <div class="p-t-30">
+                        <button onclick="uploadAd()" class="btn btn--radius btn--green">Upload Your Ad</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="../../firebase/firebase.js"></script>
+
+    <script type="module" src="./addForm.js"></script>
+
+</body>
+
+</html>
